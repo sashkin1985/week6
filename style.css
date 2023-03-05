@@ -1,0 +1,99 @@
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header header header header header header header header header header header header header"
+        "main main main main main main main main main right right right right"
+        "main main main main main main main main main right right right right"
+        "main main main main main main main main main right right right right"
+        "main main main main main main main main main right right right right"
+        "main main main main main main main main main right right right right"
+        "ff ff ff ff ff ff ff ff ff ff ff ff ff"
+        "ff ff ff ff ff ff ff ff ff ff ff ff ff"
+        "ff ff ff ff ff ff ff ff ff ff ff ff ff";
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . main1 . . . ."
+        ". inn1 inn1 . inn2 inn2 . ."
+        ". . . . . . . ."
+        ". inn3 inn3 inn3 inn3 inn3 . ."
+        ". . . . . . . .";
+    grid-area: main;
+    background-color: bisque;
+}
+
+.main1 {
+    grid-area: main1;
+}
+
+.inn1 {
+    grid-area: inn1;
+    background-color: rosybrown;
+}
+
+
+.inn2 {
+    grid-area: inn2;
+    background-color: rosybrown;
+}
+
+.inn3 {
+    grid-area: inn3;
+    background-color: rosybrown;
+}
+
+.right {
+    grid-area: right;
+    background-color: greenyellow;
+}
+
+.header {
+    grid-area: header;
+    background-color: gray;
+    height: 3em;
+}
+
+.ff {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        ". . . . . . . . ."
+        ". footer1 . footer2 . footer3 . footer4 ."
+        ". . . . . . . . .";
+    grid-area: ff;
+    background-color: gray;
+}
+
+.footer1 {
+    grid-area: footer1;
+    background-color: aliceblue;
+}
+
+.footer2 {
+    grid-area: footer2;
+    background-color: aliceblue;
+}
+
+.footer3 {
+    grid-area: footer3;
+    background-color: aliceblue;
+}
+
+.footer4 {
+    grid-area: footer4;
+    background-color: aliceblue;
+}
